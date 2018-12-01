@@ -15,9 +15,13 @@ a {
     color: white;
 }
 
+
+/* First section Begins */
 #my-name {
     font-size: 70px;
-    color: white;
+    background: linear-gradient(to right, #ffffff , #903cff , #2196f3 , #ff00eb);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 #avatar {
@@ -50,6 +54,9 @@ a {
     padding: 10px;
 }
 
+/* First section Ends */
+
+/* Second Section Begins */
 .second-page {
     background: url(images/second-page.jpg);
     height: 100vh;
@@ -74,3 +81,4 @@ a {
     justify-content: space-around;
     
 }
+/* Second Section Ends */
