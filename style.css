@@ -8,4 +8,37 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+}
+
+.about-me {
+    animation: slide-in 5s infinite;
+}
+
+.logo {
+    margin: 20px auto;
+    width: 250px; 
+}
+
+@keyframes slide-in {
+    0% {
+        color: ;
+    }
+
+    50% {
+        color: white;
+    }
+    100% {
+        color:;
+    }
+}
+
+.down-arrow {
+    margin: 20px auto;
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid gray;
+	
 }
