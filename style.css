@@ -4,6 +4,7 @@ html {
 
 body {
     background-color: darkslategray;
+    width: 100%;
 }
 
 .index {
@@ -51,6 +52,7 @@ body {
     background-color: #ff493c;
     height: 100vh;
     display: flex;
+    width: 100%;
 }
 
 h1 {
@@ -61,11 +63,26 @@ p {
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
 }
+
 .basic-info-picture {
     width: 500px;
     height: auto;
     border: 7px solid black;
 }
-#pic-code {
 
+.pictures {
+    width: auto;
+}
+#pic-vr {
+    display: flex;
+    width: 80%;
+    margin: 10px auto;
+}
+#pic-ar {
+    height: 335px;
+}
+
+.info {
+    width: 800px;
+    padding-top: 100px;
 }
