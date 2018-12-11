@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: darkslategray;
 }
@@ -13,6 +17,7 @@ body {
 
 .about-me {
     animation: slide-in 5s infinite;
+    user-select: none;
 }
 
 .logo {
@@ -34,11 +39,19 @@ body {
 }
 
 .down-arrow {
-    margin: 20px auto;
+    display: inline-block;
     width: 0; 
-    height: 0; 
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-top: 20px solid gray;
-	
+	margin-top: 70px;
+}
+
+#basic {
+    background-color: #ff493c;
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Playfair Display SC', serif;
 }
