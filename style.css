@@ -50,8 +50,22 @@ body {
 #basic {
     background-color: #ff493c;
     height: 100vh;
+    display: flex;
 }
 
 h1 {
     font-family: 'Playfair Display SC', serif;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.basic-info-picture {
+    width: 500px;
+    height: auto;
+    border: 7px solid black;
+}
+#pic-code {
+
 }
