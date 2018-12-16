@@ -87,3 +87,9 @@ p {
     width: 800px;
     padding-top: 100px;
 }
+
+.header {
+    background-color:  coral;
+    position: fixed;
+    width: 100%;
+}
