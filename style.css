@@ -39,19 +39,35 @@ body {
     margin-right: 80px;
 }
 
+.instagram:hover {
+    border: 2px solid black;
+}
+
 .youtube {
     height: 50px;
     margin-top: 10px;
     margin-right: 80px;
 }
+
+.youtube:hover {
+    border: 2px solid black;
+}
+
 .facebook {
     height: 50px;
     margin-top: 10px;
-    
+}
+
+.facebook:hover {
+    border: 2px solid black;
 }
 
 .github {
     height: 50px;
     margin-top: 10px;
     margin-right: 80px;
+}
+
+.github:hover {
+    border: 2px solid black;
 }
