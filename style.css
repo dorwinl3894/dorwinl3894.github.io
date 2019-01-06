@@ -1,5 +1,13 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
 
+}
+
+.header {
+    width: 100vw;
 }
 
 nav {
@@ -16,10 +24,10 @@ nav {
 }
 
 .home-page {
+    width: 100vw;
     background-image: url(image/coffee.jpg);
-    height: 90vh;
+    height: 92vh;
     background-size: cover;
-    z-index: -1;
     text-align: center;
 }
 
@@ -35,6 +43,43 @@ nav {
     display: inline-block;
     background-color: deepskyblue;
     margin-top: 100px;
+}
+
+#fixed {
+    background:url(image/sakura.jpg) no-repeat center center fixed;
+    /* display: table; */
+    height:60%;
+    /* position: relative; */
+    width: 100vw;
+    /* background-size: cover; */
+    padding: 200px;
+    border: 5px solid black;
     
-    
+}
+
+#about-me {
+    height: 100vh;
+    line-height: 100vh;
+}
+
+#cyberpunk {
+    width: 100%;
+    vertical-align: middle;
+    height: 500px;
+    border: 5px solid black;
+}
+
+.general-info{
+    font-family: 'Coming Soon', cursive;
+    padding-top: 175px;
+}
+
+h2 {
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 30px;
+}
+
+.hobbies {
+    padding-top: 175px;
+    font-family: 'Coming Soon', cursive;
 }
