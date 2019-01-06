@@ -83,3 +83,23 @@ h2 {
     padding-top: 175px;
     font-family: 'Coming Soon', cursive;
 }
+
+#abstract {
+    background-color: orange;
+    position: absolute;
+    width: 450px;
+    height: 600px;
+    top:1500px;
+    left:500px;
+    
+}
+
+#abstract-1 {
+    background-color: cyan;
+    position: absolute;
+    width: 650px;
+    height: 400px;
+    top:1600px;
+    right:200px;
+    transform: rotate(45deg);
+}
