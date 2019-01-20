@@ -24,7 +24,7 @@ nav {
 }
 
 .home-page {
-    width: 100vw;
+    width: 100%;
     background-image: url(image/coffee.jpg);
     height: 92vh;
     background-size: cover;
@@ -50,7 +50,7 @@ nav {
     /* display: table; */
     height:60%;
     /* position: relative; */
-    width: 100vw;
+    width: 100%;
     /* background-size: cover; */
     padding: 200px;
     border: 5px solid black;
@@ -102,4 +102,21 @@ h2 {
     top:1600px;
     right:200px;
     transform: rotate(45deg);
+}
+
+@media (max-width: 600px ) {
+    #abstract {
+        display: none;
+    }
+    #abstract-1 {
+        display:none;
+    }
+    #fixed {
+        display: none;
+        margin: 0;
+    }
+    #cyberpunk {
+    
+        height: 300px;
+    }
 }
