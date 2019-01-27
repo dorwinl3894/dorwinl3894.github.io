@@ -1,122 +1,68 @@
-html {
-    scroll-behavior: smooth;
+* {   
+    margin: 0;
+    
   }
 
-body {
-
-}
-
-.header {
-    width: 100vw;
-}
-
-nav {
-    background-color: deepskyblue;
+.cover {
+    background-image: url("images/background.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
     
 }
 
-.navbar-brand {
-    font-size: 40px;
-}
-
-.nav-item {
-    font-size: 20px;
-}
-
-.home-page {
+header {
+    display:flex;
     width: 100%;
-    background-image: url(image/coffee.jpg);
-    height: 92vh;
-    background-size: cover;
-    text-align: center;
+    height:100px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    flex-wrap: wrap;
+}
+h3 {
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    font-size: 25px;
+    margin: 0 50px;
+    color: white;
 }
 
 #logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 250px;
-    height: 250px;
+    width: 170px;
+}
+#welcome {
+    opacity: 1;
+    text-align: center;
+    margin-top: 200px;
+    color: white;
+    font-size: 50px;
+    animation-name: welcome;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+}
+@keyframes welcome {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
-.button {
-    display: inline-block;
-    background-color: deepskyblue;
-    margin-top: 100px;
-}
-
-#fixed {
-    background:url(image/sakura.jpg) no-repeat center center fixed;
-    /* display: table; */
-    height:60%;
-    /* position: relative; */
-    width: 100%;
-    /* background-size: cover; */
-    padding: 200px;
-    border: 5px solid black;
-    
-}
-
-#about-me {
-    height: 100vh;
-    line-height: 100vh;
-}
-
-#cyberpunk {
-    width: 100%;
-    vertical-align: middle;
-    height: 500px;
-    border: 5px solid black;
-}
-
-.general-info{
-    font-family: 'Coming Soon', cursive;
-    padding-top: 175px;
-}
-
-h2 {
-    font-family: 'Allerta Stencil', sans-serif;
+#welcome-2 {
+    opacity: 1;
+    text-align: center;
+    color: white;
     font-size: 30px;
+    margin-top: 20px;
+    animation-name: welcome2;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
 }
-
-.hobbies {
-    padding-top: 175px;
-    font-family: 'Coming Soon', cursive;
-}
-
-#abstract {
-    background-color: orange;
-    position: absolute;
-    width: 450px;
-    height: 600px;
-    top:1500px;
-    left:500px;
-    
-}
-
-#abstract-1 {
-    background-color: cyan;
-    position: absolute;
-    width: 650px;
-    height: 400px;
-    top:1600px;
-    right:200px;
-    transform: rotate(45deg);
-}
-
-@media (max-width: 600px ) {
-    #abstract {
-        display: none;
-    }
-    #abstract-1 {
-        display:none;
-    }
-    #fixed {
-        display: none;
-        margin: 0;
-    }
-    #cyberpunk {
-    
-        height: 300px;
-    }
+@keyframes welcome2 {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    50% {opacity: 0;}
+    75% {opacity: 0;}
+    100% {opacity: 1;}
 }
