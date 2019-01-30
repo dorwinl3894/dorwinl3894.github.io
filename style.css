@@ -48,8 +48,19 @@ h3 {
 li {
     list-style-type: none;
 }
+
+.about-header {
+    display: inline-block;
+    margin: 10px 10px 20px 80px;
+    padding: 5px 10px;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 100px;
+    background-color: #7fbdf4;
+}
+
 .about-me-info {
     font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
 }
 
 
@@ -129,7 +140,7 @@ li {
 #about-me-caption {
     font-family: 'Raleway', sans-serif;
     margin: 100px 100px 50px 100px;
-    background-color: #6DFEEC;
+    background-color: #7fbdf4;
     height: 150px;
     font-size: 52px;
     text-align: center;
@@ -143,4 +154,56 @@ p, ul, li {
     margin-right: 80px;
     font-size: 32px;
     
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0 100px 0;
+}
+
+.flex-item {
+    border: 5px solid dodgerblue;
+    margin: 50px 50px 10px 50px;
+    width: 500px;
+    height: 500px;
+    flex: 1;
+}
+
+.flex-item-caption {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+#footer {
+    display: flex;
+    width: 100%;
+    height: 180px;
+    background-color: dodgerblue;
+}
+
+.footer-item {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    flex: 1;
+    
+}
+
+#footer-thanks {
+    line-height: 180px;
+    margin-left: 60px;
+    font-size: 20px;
+}
+
+#footer-findme {
+    margin: 15px 0px 15px 0px;
+}
+
+.fab, .far {
+    font-size: 42px;
+}
+
+.fa-github, .fa-envelope {
+    color: black;
 }
