@@ -1,35 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kalam|Volkhov" rel="stylesheet">
     <title>About Dorwin</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
 </head>
+
 <body>
     <div class="home">
         <img id="logo" src="doorwin.png">
         <h1 id="home-welcome">Welcome to my Website!</h1>
         <h2 id=home-instruction>Scroll Down To Learn More</h2>
-        <i class="fa fa-arrow-down" aria-hidden="true"></i>
+        <a href="#about-section">
+            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+        </a>
     </div>
     <div class="banner">
         <h1 class="banner-text">ABOUT ME</h1>
     </div>
     <div class="about-me-section">
-        <div class="about-me-general-info">
+        <div class="about-me-item">
             <h1 class="about-me-header">General Info</h1>
-            <p>My name is Dorwin Liang and I'm currently learning Web Development in both school and at my house. When it comes to creating a website, I still consider myself a beginner because of my mediocore knowledge of HTML and CSS. And that is exactly why I made this website! To practice these languages and broaden my knowledge.</p>
+            <p>My name is Dorwin Liang and I'm currently learning Web Development in both school and at my house. When
+                it comes to creating a website, I still consider myself a beginner because of my mediocore knowledge of
+                HTML and CSS. And that is exactly why I made this website! To practice these languages and broaden my
+                knowledge.</p>
         </div>
-        <div class="about-me-program-info">
+        <div class="about-me-item">
             <h1 class="about-me-header">Programming Background</h1>
-            <p>I was first introduced to any form of programming in the 9th grade. I began by "building" code using Scratch. But what really gave me an interest in programming was learning <a class="links-show links" href="https://github.com/dorwinl3894/p5js">p5.js</a> the following year. I was able to build interactive games that I was actually pretty proud of and that was what made me want to keep learning how to code.</p>
+            <p>I was first introduced to any form of programming in the 9th grade. I began by "building" code using
+                Scratch. But what really gave me an interest in programming was learning <a class="links-show links"
+                    href="https://github.com/dorwinl3894/p5js">p5.js</a> the following year. I was able to build
+                interactive games that I was actually pretty proud of and that was what made me want to keep learning
+                how to code.</p>
         </div>
-        <div class="about-me-interests">
+        <div class="about-me-item">
             <h1 class="about-me-header">My Interests</h1>
             <p id="list-title">Some of my interests include...</p>
             <ul id="interest-list">
@@ -46,20 +61,75 @@
         <h1 class="banner-text">PROJECTS</h1>
     </div>
     <div class="projects-section">
-        <figure>
-            <img class="projects-item" src="calculatorProject.png">
-            <figcaption class="projects-item-caption">My first HTML project involving Javascript! <br> <a href="https://dorwinl3894.github.io/CalculatorJS/">>>Link to project</a></figcaption>
-        </figure>
+        <div class="projects-section-item">
+            <a href="https://github.com/dorwinl3894/CalculatorJS"><img class="projects-item" src="calculatorProject.png"></a>
+        </div>
+        <div class="projects-section-item">
+            <a href="https://github.com/dorwinl3894/cell-cycle"><img class="projects-item" src="cell-cycleProject.jpg"></a>
+        </div>
+
     </div>
-    <footer>
-        <div id="footer-thanks">
-            <p>Thank you for taking your time to look at my personal website! You can find/contact me through Github or Email. </p>
+    <div class="banner">
+        <h1 class="banner-text">SKILLSET</h1>
+    </div>
+    <div class="skillset-section">
+        <div class="skills-items">
+            <i class="fab fa-html5"></i>
+            <div class="skillset-knowledge-bar">
+                <i class="fas fa-circle" id="fa-circle-marked"></i>
+                <i class="fas fa-circle" id="fa-circle-marked"></i>
+                <i class="fas fa-circle" id="fa-circle-marked"></i>
+                <i class="fas fa-circle" id="fa-circle-marked"></i>
+                <i class="fas fa-circle" id="fa-circle-marked"></i>
+                <i class="fas fa-circle" id="fa-circle-marked"></i>
+                <i class="fas fa-circle" id="fa-circle-marked"></i>
+                <i class="fas fa-circle" id="fa-circle-marked"></i>
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+            </div>
         </div>
-        <div id="footer-social-media">
-            <i class="far fa-envelope"><span id="email-link">&nbsp&nbspdorwinl3894@hstat.org</span></i>
-            <br>
-            <i class="fab fa-github">&nbsp&nbsp<a id="github-link" href="https://github.com/dorwinl3894">github.com/dorwinl3894</a></i>
+        <div class="skills-items">
+            <i class="fab fa-css3-alt"></i>
+            <div class="skillset-knowledge-bar">
+                <i class="fas fa-circle" id="fa-circle-marked"></i>
+                <i class="fas fa-circle" id="fa-circle-marked"></i>
+                <i class="fas fa-circle" id="fa-circle-marked"></i>
+                <i class="fas fa-circle" id="fa-circle-marked"></i>
+                <i class="fas fa-circle" id="fa-circle-marked"></i>
+                <i class="fas fa-circle" id="fa-circle-marked"></i>
+                <i class="fas fa-circle" id="fa-circle-marked"></i>
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+            </div>
         </div>
-    </footer>
+        <div class="skills-items">
+            <i class="fab fa-js-square"></i>
+            <div class="skillset-knowledge-bar">
+                <i class="fas fa-circle" id="fa-circle-marked"></i>
+                <i class="fas fa-circle" id="fa-circle-marked"></i>
+                <i class="fas fa-circle" id="fa-circle-marked"></i>
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+            </div>
+        </div>
+        <footer>
+            <div id="footer-thanks">
+                <p>Thank you for taking your time to look at my personal website! You can find/contact me through
+                    Github or
+                    Email. </p>
+            </div>
+            <div id="footer-social-media">
+                <i class="far fa-envelope"><span id="email-link">&nbsp&nbspdorwinliang@gmail.com</span></i>
+                <br>
+                <i class="fab fa-github">&nbsp&nbsp<a id="github-link" href="https://github.com/dorwinl3894">github.com/dorwinl3894</a></i>
+            </div>
+        </footer>
 </body>
+
 </html>

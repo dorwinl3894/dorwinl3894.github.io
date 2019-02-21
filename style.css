@@ -1,6 +1,7 @@
 html,body {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 .home {
@@ -74,14 +75,13 @@ html,body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
     width: 100%;
     height: 150px;
-    background: rgb(255,50,50); /* Old browsers */
-    background: -moz-linear-gradient(45deg, rgba(255,50,50,1) 1%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(132,244,190,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, rgba(255,50,50,1) 1%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(132,244,190,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, rgba(255,50,50,1) 1%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(132,244,190,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#84f4be',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background-image: url("backgroundimages/gradient.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .banner-text {
     font-size: 72px;
@@ -91,8 +91,14 @@ html,body {
 .about-me-section {
     display: flex;
     justify-content: space-between;
+    background-image: url("backgroundimages/sakura-tree.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.about-me-general-info {
+
+.about-me-item {
     color: #FFF4CB;
     font-size: 24px;
     font-family: 'Volkhov', serif;
@@ -100,25 +106,9 @@ html,body {
     margin: 40px 40px;
     flex: 1;
     background-color: #b079d7;
+    border-radius: 50px;
 }
-.about-me-program-info {
-    color: #FFF4CB;
-    font-size: 24px;
-    font-family: 'Volkhov', serif;
-    padding: 20px 20px;
-    margin: 40px 40px;
-    flex: 1;
-    background-color: #b079d7;
-}
-.about-me-interests {
-    color: #FFF4CB;
-    font-size: 24px;
-    font-family: 'Volkhov', serif;
-    padding: 20px 20px;
-    margin: 40px 40px;
-    flex: 1;
-    background-color: #b079d7;
-}
+
 .about-me-header {
     text-align: center;
     font-family: 'Kalam', cursive;
@@ -130,16 +120,61 @@ html,body {
 }
 .projects-item {
     border: 7px solid #b079d7;
-    margin: 50px 50px 10px 50px;
+    margin: 50px 50px 10px 10px ;
     width: 500px;
     height: 500px;
 }
-.projects-item-caption {
-    font-family: 'Volkhov', serif;
-    font-size: 20px;
-    margin-left: 50px;
+.projects-item:hover {
+    box-shadow: 5px 5px 50px ;
 }
 
+
+.skillset-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.skills-items {
+    display: flex;
+}
+.fa-html5 {
+    font-size: 300px;
+    color: #e44d26;
+    background-color: white;
+}
+.fa-css3-alt {
+    font-size: 300px;
+    color: #379ad6;
+    background-color: white;
+}
+.fa-js-square {
+    font-size: 300px;
+    color: #e8d44d;
+    background-color: white;
+}
+
+.skillset-knowledge-bar {
+    background-color: #b079d7;
+    height: 100px;
+    width: 400px;
+    border-radius: 400px;
+    text-align: center;
+    margin-top: 100px; 
+}
+.fa-circle {
+    position: relative;
+    top: 40px;
+    color: white;
+    font-size: 30px;
+}
+#fa-circle-marked {
+    position: relative;
+    top: 40px;
+    color: #e44d26;
+    font-size: 30px;
+}
 footer {
     display: flex;
     background-color: #b079d7;
@@ -149,16 +184,14 @@ footer {
     align-items: center;
     flex-direction: column;
 }
-.fab, .far {
+.fa-envelope, .fa-github {
     color: white;
     font-size: 30px;
 }
 
-
 #footer-thanks {
     font-family: 'Volkhov', serif;
     font-size: 20px;
-
 }
 #footer-social-media {
     font-size: 25px;
@@ -190,10 +223,23 @@ footer {
         margin: 30px 0px;
     }
     .projects-item {
-        width: 100%;
+        width: 95%;
         height: 350px;
         margin: 0;
         padding:0;
+        box-shadow: none;
+    }
+    .fa-html5, .fa-css3-alt, .fa-js-square {
+        font-size: 200px;
+    }
+    .skills-items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .skillset-knowledge-bar {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 370px;
     }
     footer {
         height: 250px;
