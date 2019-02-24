@@ -22,7 +22,7 @@ html,body {
     border: 5px solid #FFF4CB;
     border-radius: 200px;
     animation-name: logo;
-    animation-duration: 2s;
+    animation-duration: 1s;
     
 }
 @keyframes logo {
@@ -36,7 +36,7 @@ html,body {
     margin-bottom: 0;
     color: #FFF4CB;
     animation-name: welcome;
-    animation-duration: 4s;
+    animation-duration: 2s;
 }
 @keyframes welcome {
     0% {opacity: 0;}
@@ -48,7 +48,7 @@ html,body {
     font-size: 32px;
     color: #FFF4CB;
     animation-name: instruction;
-    animation-duration: 5s;
+    animation-duration: 2.5s;
     
 }
 @keyframes instruction {
@@ -130,8 +130,8 @@ html,body {
     height: 500px;
 }
 .projects-item:hover {
-    box-shadow: 5px 5px 50px ;
-}
+    border: 7px solid red;
+  }
 
 
 .skillset-section {
