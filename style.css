@@ -16,6 +16,9 @@ a:hover {
     text-decoration: underline;
     color: red;
 }
+li {
+    margin: 10px 0px;
+}
 /* CSS for landing page section */
 .landing-page {
     height: 100vh;
