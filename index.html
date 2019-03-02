@@ -1,143 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nunito+Sans|Questrial" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="dist/sal.css">
-    <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Kalam|Volkhov" rel="stylesheet">
-    <title>About Dorwin</title>
+    <link rel="stylesheet" href="sal/sal.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous">
     </script>
+    <script>
+        $(document).ready(function(){
+            
+        });
+    </script>
+    <title>Dorwin Liang | Portfolio</title>
 </head>
-
 <body>
-    <div class="home">
-        <img id="logo" src="doorwin.png">
-        <h1 id="home-welcome">Welcome to my Website!</h1>
-        <h2 id=home-instruction>Scroll Down To Learn More</h2>
-        <a href="#about-section">
-            <i class="fa fa-arrow-down" aria-hidden="true"></i>
-        </a>
+<div id="wrapper">
+    <div class="landing-page">
+        <h1 data-sal="slide-right" data-sal-duration="1700" data-sal-easing="ease-out-bounce" data-sal-delay="200" id="title">About Me</h1>
+        <i data-sal="zoom-in" data-sal-duration="1700" data-sal-easing="ease-out-bounce"data-sal-delay="200" class="fas fa-times"></i>
+        <h2 data-sal="slide-left" data-sal-duration="1700" data-sal-easing="ease-out-bounce" data-sal-delay="200" class="name">Dorwin L.</h2>
     </div>
-    <div class="banner">
-        <h1 class="banner-text">ABOUT ME</h1>
-    </div>
-    <div class="about-me-section">
-        <div data-sal="slide-right" data-sal-easing="ease-out-bounce" data-sal-duration="1500" class="about-me-item">
-            <h1 class="about-me-header">General Info</h1>
-            <p>My name is Dorwin Liang and I'm currently learning Web Development in school and as a hobby. When
-                it comes to creating a website, I still consider myself a beginner because of my mediocore knowledge of
-                HTML and CSS. And that is exactly why I made this website! To practice these languages and broaden my
-                knowledge in web development.</p>
+    <div class="about-section">
+        <img data-sal="slide-right" data-sal-duration="1500" data-sal-easing="ease-out-bounce" class="image logo"src="images/doorwin.png">
+        <div class="information">
+            <p data-sal="zoom-in" data-sal-duration="1500" data-sal-easing="ease-out-bounce">
+                My name is <span class="name1">Dorwin Liang</span> and I'm currently learning Web Development at the <span id="school">High School of Telecommunications Arts and Technology</span>. When it comes to creating a front-end website, I would consider myself an intermediate programmer because I have been coding with <span id="html">HTML</span> and <span id="css">CSS</span> for ~8 months. I made this website to practice web design / web development and to broaden my knowledge in web development as well as showcase what I am currently capable of creating.
+            </p>
+                <br>
+                <br>
+            <p data-sal="zoom-in" data-sal-duration="1500" data-sal-easing="ease-out-bounce">
+                I was first introduced to any form of programming in the 9th grade. I began by "building" code using Scratch. But what really gave me an interest in programming was learning <a href="https://github.com/dorwinl3894/p5js">p5.js</a> the following year. I was able to build interactive games that I was proud of and that was what made me want to keep learning how to code.
+                <br>
+            </p>
         </div>
-        <div data-sal="slide-right" data-sal-easing="ease-out-bounce" data-sal-duration="1500" data-sal-delay="300" class="about-me-item">
-            <h1 class="about-me-header">Programming Background</h1>
-            <p>I was first introduced to any form of programming in the 9th grade. I began by "building" code using
-                Scratch. But what really gave me an interest in programming was learning <a class="links-show links"
-                    href="https://github.com/dorwinl3894/p5js">p5.js</a> the following year. I was able to build
-                interactive games that I was actually pretty proud of and that was what made me want to keep learning
-                how to code.</p>
-        </div>
-        <div data-sal="slide-right" data-sal-easing="ease-out-bounce" data-sal-duration="1500" data-sal-delay="600" class="about-me-item">
-            <h1 class="about-me-header">My Interests</h1>
-            <p id="list-title">Some of my interests include...</p>
+        <div data-sal="slide-right" data-sal-duration="1500" data-sal-easing="ease-out-bounce" class="interest-box">
+            <h2 id="interest-title">Some of my career field interests are but not limited to...</h2>
             <ul id="interest-list">
                 <li>Game Development 🕹️</li>
                 <li>App Development 📱</li>
+                <li>Software Engineering 👻</li>
                 <li>Virtual Reality 🕶️</li>
-                <li>Augmented Reality 👻</li>
                 <li>Artifical Intelligence 🤖</li>
             </ul>
         </div>
     </div>
-    <div class="banner">
-        <h1 class="banner-text">PROJECTS</h1>
-    </div>
     <div class="projects-section">
-        
-            <a href="https://github.com/dorwinl3894/CalculatorJS"><img data-sal="zoom-in" data-sal-easing="ease-out-bounce" data-sal-duration="1700" class="projects-item" src="calculatorProject.png"></a>
-        
-        
-            <a href="https://github.com/dorwinl3894/cell-cycle"><img data-sal="zoom-in" data-sal-easing="ease-out-bounce" data-sal-duration="1700" class="projects-item" src="cell-cycleProject.jpg"></a>
-        
-
+        <h1 class="header">Projects</h1>
+        <div class="projects-box">
+            <a href="https://github.com/dorwinl3894/Shiba_Inu"><img class="project-item" data-sal="slide-right" data-sal-duration="1500" data-sal-easing="ease-out-bounce" src="images/shiba_inu.png"></a>
+            <a href="https://github.com/dorwinl3894/CalculatorJS"><img class="project-item" data-sal="slide-right" data-sal-duration="1500" data-sal-easing="ease-out-bounce" data-sal-delay="300" src="images/calculatorProject.png"></a>
+            <a href="https://github.com/dorwinl3894/cell-cycle"><img class="project-item" data-sal="slide-right" data-sal-duration="1500" data-sal-easing="ease-out-bounce" data-sal-delay="600" src="images/cell-cycleProject.jpg"></a>
+        </div>
     </div>
-    <div class="banner">
-        <h1 class="banner-text">SKILLSET</h1>
+    <div class="skills-section">
+        <h1 class="header" data-sal="slide-right" data-sal-duration="1700" data-sal-easing="ease-out-bounce" >Skills</h1>
+        <div class="skills-box">
+            <i class="fab fa-html5" data-sal="zoom-in" data-sal-duration="1700" data-sal-easing="ease-out-bounce"></i>
+            <div class="progress-bar" data-sal="zoom-in" data-sal-duration="1700" data-sal-easing="ease-out-bounce">
+                <div id="html-experience"></div>
+            </div>
+        </div>
+        <div class="skills-box">
+            <i class="fab fa-css3-alt" data-sal="zoom-in" data-sal-duration="1700" data-sal-easing="ease-out-bounce" data-sal-delay="250"></i>
+            <div class="progress-bar" data-sal="zoom-in" data-sal-duration="1700" data-sal-easing="ease-out-bounce" data-sal-delay="250">
+                <div id="css-experience"></div>
+            </div>
+        </div>
+        <div class="skills-box">
+            <i class="fab fa-js-square" data-sal="zoom-in" data-sal-duration="1700" data-sal-easing="ease-out-bounce" data-sal-delay="500"></i>
+            <div class="progress-bar" data-sal="zoom-in" data-sal-duration="1700" data-sal-easing="ease-out-bounce" data-sal-delay="500">
+                <div id="js-experience"></div>
+            </div>
+        </div>
+        <br>
+        <br>
     </div>
-    <div class="skillset-section">
-        <div data-sal="slide-right" data-sal-easing="ease-out-bounce" data-sal-duration="1500" class="skills-items">
-            <i class="fab fa-html5"></i>
-            <div class="skillset-knowledge-bar">
-                <i class="fas fa-circle" id="fa-circle-marked"></i>
-                <i class="fas fa-circle" id="fa-circle-marked"></i>
-                <i class="fas fa-circle" id="fa-circle-marked"></i>
-                <i class="fas fa-circle" id="fa-circle-marked"></i>
-                <i class="fas fa-circle" id="fa-circle-marked"></i>
-                <i class="fas fa-circle" id="fa-circle-marked"></i>
-                <i class="fas fa-circle" id="fa-circle-marked"></i>
-                <i class="fas fa-circle" id="fa-circle-marked"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-            </div>
+    <footer>
+        <h1 id="footer-h1">Thanks for checking out my website!</h1>
+        <h1>Find me at</h1>
+        <div>
+            <i class="far fa-envelope footer-icon footer-email">&nbspdorwinliang@gmail.com</i>
+            <abbr title="https://github.com/dorwinl3894"><a class="footer-links" href="https://github.com/dorwinl3894"><i class="fab fa-github footer-icon">&nbspGithub</i></a></abbr>
+            <abbr title="https://www.linkedin.com/in/dorwin-liang-b43422180/"><a class="footer-links"href="https://www.linkedin.com/in/dorwin-liang-b43422180/"><i class="fab fa-linkedin footer-icon">&nbspLinkedIn</i></a></abbr>
         </div>
-        <div data-sal="slide-left" data-sal-easing="ease-out-bounce" data-sal-duration="1500" data-sal-delay="300" class="skills-items">
-            <i class="fab fa-css3-alt"></i>
-            <div class="skillset-knowledge-bar">
-                <i class="fas fa-circle" id="fa-circle-marked"></i>
-                <i class="fas fa-circle" id="fa-circle-marked"></i>
-                <i class="fas fa-circle" id="fa-circle-marked"></i>
-                <i class="fas fa-circle" id="fa-circle-marked"></i>
-                <i class="fas fa-circle" id="fa-circle-marked"></i>
-                <i class="fas fa-circle" id="fa-circle-marked"></i>
-                <i class="fas fa-circle" id="fa-circle-marked"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-            </div>
-        </div>
-        <div data-sal="slide-right" data-sal-easing="ease-out-bounce" data-sal-duration="1500" data-sal-delay="600" class="skills-items">
-            <i class="fab fa-js-square"></i>
-            <div class="skillset-knowledge-bar">
-                <i class="fas fa-circle" id="fa-circle-marked"></i>
-                <i class="fas fa-circle" id="fa-circle-marked"></i>
-                <i class="fas fa-circle" id="fa-circle-marked"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-            </div>
-        </div>
-        <footer>
-            <div id="footer-thanks">
-                <p>Thank you for taking your time to look at my personal website! You can find/contact me through
-                    Github or
-                    Email. </p>
-            </div>
-            <div id="footer-social-media">
-                <i class="far fa-envelope"><span id="email-link">&nbsp&nbspdorwinliang@gmail.com</span></i>
-                <br>
-                <i class="fab fa-github">&nbsp&nbsp<a id="github-link" href="https://github.com/dorwinl3894">github.com/dorwinl3894</a></i>
-            </div>
-        </footer>
+    </footer>
+
+</div>
 
 
 
-
-    <script src="dist/sal.js"></script>      
-    <script>
-        sal();
-    </script>  
+<script src="sal/sal.js"></script>
+<script>
+    sal();
+</script>
+  
 </body>
-
 </html>

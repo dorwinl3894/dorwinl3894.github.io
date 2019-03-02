@@ -1,263 +1,229 @@
-html,body {
+* {
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
 }
+::selection {
+    background: mediumturquoise ;
+}
+body {
 
-.home {
-    background: url(home-page-pic.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+}
+a {
+    text-decoration: none;
+    
+}
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
+/* CSS for landing page section */
+.landing-page {
     height: 100vh;
+    background: url(images/brooklyn-bridge.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-size: 4.5vw;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.name {
+    font-family: 'Indie Flower', cursive;
 }
 
-#logo {
-    opacity: 1;
-    height: 30%;
-    border: 5px solid #FFF4CB;
-    border-radius: 200px;
-    animation-name: logo;
-    animation-duration: 1s;
-    
-}
-@keyframes logo {
-    0% {opacity: 0;}
-    50% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-#home-welcome {
-    font-size: 64px;
-    margin-bottom: 0;
-    color: #FFF4CB;
-    animation-name: welcome;
-    animation-duration: 2s;
-}
-@keyframes welcome {
-    0% {opacity: 0;}
-    50% {opacity: 0;}
-    100% {opacity: 1;}
-}
-#home-instruction {
-    margin: 0;
-    font-size: 32px;
-    color: #FFF4CB;
-    animation-name: instruction;
-    animation-duration: 2.5s;
-    
-}
-@keyframes instruction {
-    0% {opacity: 0;}
-    50% {opacity: 0;}
-    100% {opacity: 1;}
-}
-.fa-arrow-down {
-    position: relative;
-    color: #FFCBF4;
-    margin-top: 50px;
-    font-size: 32px;
-    animation-name: arrow;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
-@keyframes arrow {
-    0% {top: 0;}
-    50%{top: 30px;}
-    100%{top: 0;}
-}
-
-.banner {
+/* CSS for about section */
+.about-section {
+    background-color: rgb(255, 166, 158);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 150px;
-    background-image: url("backgroundimages/gradient.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
-.banner-text {
-    font-size: 72px;
-    font-family: 'Gentium Book Basic', serif;
+.logo {
+    margin-top: 50px;
+   border: 4px solid black;
+   border-radius: 200px;
+    
 }
-
-.about-me-section {
-    display: flex;
-    justify-content: space-between;
-    background-image: url("backgroundimages/sakura-tree.png");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.information {
+    font-family: 'Questrial', sans-serif;
+    font-size: 30px;
+    width: 66%;
+    margin: 30px;
 }
-
-.about-me-item {
-    color: #FFF4CB;
-    font-size: 24px;
-    font-family: 'Volkhov', serif;
-    padding: 20px 20px;
-    margin: 40px 40px;
-    flex: 1;
-    background-color: rgbA(176, 121, 215, 0.9);
-    border-radius: 50px;
+.interest-box {
+    font-family: 'Questrial', sans-serif;
+    font-size: 25px;
+    margin: 30px 0px;
 }
-
-.about-me-header {
+#interest-list {
+    list-style-type: none;
     text-align: center;
-    font-family: 'Kalam', cursive;
+}
+.name1 {
+    color: rgb(184, 242, 230);
+}
+#html {
+    color: rgb(228, 77, 38);
+}
+#css {
+    color: rgb(53, 149, 207);
+}
+#school {
+    color: yellow;
 }
 
+/* CSS for projects section */
 .projects-section {
     display: flex;
+    background-color: dodgerblue;
     justify-content: center;
-    background-image: url("backgroundimages/mountain.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    flex-direction: column;
 }
-.projects-item {
-    border: 7px solid #b079d7;
-    margin: 50px 20px;
-    width: 500px;
-    height: 500px;
+.header {
+    font-size: 80px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
 }
-.projects-item:hover {
-    border: 7px solid red;
-  }
 
-
-.skillset-section {
+.projects-box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+}
+.project-item {
+    border-radius: 20px;
+    width: 600px;
+    height: 600px;
+    margin: 30px 5px;
+}
+.project-item:hover {
+    border-style: dotted;
+}
+
+/* CSS for skills section */
+.skills-section {
+    background-color: rgb(255, 166, 158);
+    display: flex;
     flex-direction: column;
 }
-.skills-items {
+.skills-box {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar {
+    width: 400px;
+    height: 50px;
+    background-color: white;
+    border-radius: 200px;
 }
 .fa-html5 {
-    font-size: 300px;
-    color: #e44d26;
-    background-color: white;
-}
-.fa-css3-alt {
-    font-size: 300px;
-    color: #379ad6;
-    background-color: white;
-}
-.fa-js-square {
-    font-size: 300px;
-    color: #e8d44d;
-    background-color: white;
+    font-size: 10vw;
+    color: rgb(233, 98, 40);
 }
 
-.skillset-knowledge-bar {
-    background-color: #b079d7;
-    height: 100px;
-    width: 400px;
-    border-radius: 400px;
-    text-align: center;
-    margin-top: 100px; 
+.fa-css3-alt {
+    font-size: 10vw;
+    color: rgb(28, 136, 199);
 }
-.fa-circle {
-    position: relative;
-    top: 40px;
-    color: white;
-    font-size: 30px;
+.fa-js-square {
+    font-size: 10vw;
+    color: rgb(239, 216, 29);
 }
-#fa-circle-marked {
-    position: relative;
-    top: 40px;
-    color: #e44d26;
-    font-size: 30px;
+#html-experience {
+    width: 80%;
+    height: 50px;
+    background-color:rgb(255, 81, 7) ;
+    border-radius: 200px;
 }
+#css-experience {
+    width: 70%;
+    height: 50px;
+    background-color:rgb(0, 161, 255) ;
+    border-radius: 200px;
+}
+#js-experience {
+    width: 35%;
+    height: 50px;
+    background-color:rgb(234, 207, 0) ;
+    border-radius: 200px;
+}
+
 footer {
-    display: flex;
-    background-color: #b079d7;
+    font-family: 'Nunito Sans', sans-serif;
     width: 100%;
     height: 150px;
+    background-color: dodgerblue;
+    color: white;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.fa-envelope, .fa-github {
+
+.footer-icon {
     color: white;
-    font-size: 30px;
+    font-size: 35px;
+    margin: 10px 20px;
+}
+.footer-icon:hover {
+    color: mediumaquamarine;
 }
 
-#footer-thanks {
-    font-family: 'Volkhov', serif;
-    font-size: 20px;
-}
-#footer-social-media {
-    font-size: 25px;
-}
-#github-link {
-    text-decoration: none;
-    color: black;
-}
-#email-link {
-    color: black;
-}
-
-
-
-@media (max-width:1024px) {  /* Smaller screens like phones and tablets */
-    #home-welcome {
-        font-size: 32px;
+/* CSS for phones */
+@media (max-width:600px) {
+    .landing-page {
+        font-size: 10vw;
     }
-    #home-instruction {
-        font-size: 22px;
+    .information {
+        width: 90%;
+        font-size: 26px;
     }
-    .about-me-section {
+    .interest-box {
+        margin: 30px 30px;
+    }
+    #interest-title {
+        font-size: 23px;
+    }
+    #interest-list {
+        font-size: 23px;
+    }
+    .projects-box {
         flex-direction: column;
     }
-    .about-me-general-info {
-        margin: 30px 0px;
+    .project-item {
+        margin: 5px auto;
+        width: 98%;
+        height: 300px;
     }
-    .about-me-interests {
-        margin: 30px 0px;
-    }
-    .about-me-program-info {
-        margin: 30px 0px;
-    }
-    .projects-item {
-        height: 350px;
-        width: 95%;
-        margin: 20px 0px;
-        padding:0;
-        box-shadow: none;
-    }
-    .projects-section {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .fa-html5, .fa-css3-alt, .fa-js-square {
-        font-size: 200px;
-    }
-    .skills-items {
-        display: flex;
+    .skills-box {
         flex-direction: column;
     }
-    .skillset-knowledge-bar {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        width: 370px;
+    .progress-bar {
+        width: 90%;
     }
     footer {
-        height: 250px;
-        text-align: center;
+        height: 350px;
     }
-    #footer-thanks {
+    .footer-email {
+        font-size: 25px;
+    }
+    #footer-h1 {
         font-size: 20px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+}
+@media (max-width:800px) {
+    footer {
+        height: 380px;
     }
 }
