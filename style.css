@@ -192,15 +192,28 @@ footer {
         flex-direction: column;
     }
     .project-item {
-        margin: 5px auto;
-        width: 98%;
+        margin: 5px 20px;
+        width: 90%;
         height: 300px;
     }
     .skills-box {
         flex-direction: column;
     }
+    .skills-icon {
+        font-size: 20vw;
+    }
     .progress-bar {
         width: 90%;
+    }
+    .footer-icon {
+        font-size: 10vw;
+        text-align: center;
+    }
+    .footer-social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     footer {
         height: 350px;
@@ -208,15 +221,19 @@ footer {
     .footer-email {
         font-size: 25px;
     }
-    #footer-h1 {
+    .footer-h1 {
         font-size: 20px;
         text-align: center;
         margin-bottom: 10px;
+        text-align: center;
     }
 
 }
 @media (max-width:800px) {
     footer {
         height: 380px;
+    }
+    .skills-icon {
+        font-size: 20vw;
     }
 }
