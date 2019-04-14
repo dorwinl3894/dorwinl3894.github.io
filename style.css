@@ -2,9 +2,7 @@
     margin: 0;
     padding: 0;
 }
-::selection {
-    background: mediumturquoise ;
-}
+
 body {
 
 }
@@ -12,10 +10,7 @@ a {
     text-decoration: none;
     
 }
-a:hover {
-    text-decoration: underline;
-    color: red;
-}
+
 li {
     margin: 10px 0px;
 }
@@ -98,7 +93,6 @@ li {
     margin: 30px 5px;
 }
 
-
 /* CSS for skills section */
 .skills-section {
     background-color: rgb(245, 245, 245);
@@ -149,7 +143,16 @@ li {
     background-color:rgb(234, 207, 0) ;
     border-radius: 200px;
 }
+.skills-extra-box {
+    display: flex;
+}
+.skills-extra-icon {
+    width: 250px;
+    height: 200px;
+    font-size: 200px;
+}
 
+/* CSS for footer */
 footer {
     font-family: 'Nunito Sans', sans-serif;
     width: 100%;
@@ -215,6 +218,9 @@ footer {
     .progress-bar {
         width: 90%;
     }
+
+
+    /* CSS for footer */
     .footer-icon {
         font-size: 10vw;
         text-align: center;
@@ -242,6 +248,7 @@ footer {
     }
 
 }
+
 @media (max-width:800px) {
     footer {
         height: 380px;
@@ -249,4 +256,5 @@ footer {
     .skills-icon {
         font-size: 20vw;
     }
+
 }
