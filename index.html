@@ -1,118 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nunito+Sans|Questrial" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="sal/sal.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">.
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
-    <script>
-        $(document).ready(function(){
-            
-        });
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
     </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Work+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="Stylesheet" href="node_modules/sal.js/dist/sal.css">
     <title>Dorwin Liang | Portfolio</title>
 </head>
+
 <body>
-    <div class="landing-page">
-        <h1 data-sal="slide-right" data-sal-duration="1700" data-sal-easing="ease-out-bounce" data-sal-delay="200" id="title">About Me</h1>
-        <i data-sal="zoom-in" data-sal-duration="1700" data-sal-easing="ease-out-bounce"data-sal-delay="200" class="fas fa-times"></i>
-        <h2 data-sal="slide-left" data-sal-duration="1700" data-sal-easing="ease-out-bounce" data-sal-delay="200" class="name">Dorwin L.</h2>
-    </div>
-    <div class="about-section">
-        <img data-sal="slide-right" data-sal-duration="1500" data-sal-easing="ease-out-bounce" class="image logo"src="images/doorwin.png">
-        <div class="information">
-            <p data-sal="zoom-in" data-sal-duration="1500" data-sal-easing="ease-out-bounce">
-                My name is <span class="impt-text">Dorwin Liang</span> and I'm currently learning Web Development at the <span class="impt-text">High School of Telecommunications Arts and Technology</span>. When it comes to creating a front-end website, I would consider myself an intermediate programmer because I have been coding with <span class="impt-text">HTML</span> and <span class="impt-text">CSS</span> for ~8 months. I made this website to practice web design / web development and to broaden my knowledge in web development as well as showcase what I am currently capable of creating.
-            </p>
-            <!-- <p data-sal="zoom-in" data-sal-duration="1500" data-sal-easing="ease-out-bounce">
-                I was first introduced to any form of programming in the 9th grade. I began by "building" code using Scratch. But what really gave me an interest in programming was learning <a href="https://github.com/dorwinl3894/p5js">p5.js</a> the following year. I was able to build interactive games that I was proud of and that was what made me want to keep learning how to code.
-                <br>
-            </p> -->
-        </div>
-        <div data-sal="slide-right" data-sal-duration="1500" data-sal-easing="ease-out-bounce" class="interest-box">
-            <h2 id="interest-title">Some of my career field interests are </h2>
-            <ul id="interest-list">
-                <li>Game Development 🕹️</li>
-                <li>App Development 📱</li>
-                <li>Software Engineering 👻</li>
-                <li>Virtual Reality 🕶️</li>
-                <li>Artifical Intelligence 🤖</li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" id="brand" href="#">Dorwin L.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-page">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#project-page">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-page">Contact</a>
+                </li>
             </ul>
         </div>
-        <br>
-        <br>
-        <br>
+    </nav>
+
+    <div id="landing-page" class="text-center">
+        <img class="logo" src="images/doorwin.png">
+        <h1 class="landing-page-title" data-sal-duration="900" data-sal="slide-right" data-sal-delay="200" data-sal-easing="ease-out-bounce">Portfolio of</h1>
+        <h1 class="landing-page-title name"  data-sal-duration="900" data-sal="slide-left" data-sal-delay="350" data-sal-easing="ease-out-bounce">Dorwin Liang</h1>
     </div>
-    <div class="projects-section">
-        <h1 class="header">Projects</h1>
-        <div class="projects-box">
-            <a href="https://github.com/dorwinl3894/Shiba_Inu"><img class="project-item" data-sal="zoom-in" data-sal-duration="1500" data-sal-easing="ease-out-bounce" src="images/shiba_inu.png"></a>
-            <a href="https://github.com/dorwinl3894/CalculatorJS"><img class="project-item" data-sal="zoom-in" data-sal-duration="1500" data-sal-easing="ease-out-bounce" data-sal-delay="300" src="images/calculatorProject.png"></a>
-            <a href="https://github.com/dorwinl3894/cell-cycle"><img class="project-item" data-sal="zoom-in" data-sal-duration="1500" data-sal-easing="ease-out-bounce" data-sal-delay="600" src="images/cell-cycleProject.jpg"></a>
-            <a href="https://github.com/dorwinl3894/poster-generator"><img class="project-item" data-sal="zoom-in" data-sal-duration="1500" data-sal-easing="ease-out-bounce" data-sal-delay="600" src="images/poster-generator.png"></a>
-        </div>
-        <br>
-        <br>
-        <br>
+    <div class="title-decoration" id="about-page">
+        <div class="horizontal-line-decoration"></div>
+        <h1 class="title" data-sal-duration="1800" data-sal="slide-left" data-sal-delay="200" data-sal-easing="ease-out-bounce">About</h1>
+        <div class="horizontal-line-decoration"></div>
     </div>
-    <div class="skills-section">
-        <h1 class="header" data-sal="slide-right" data-sal-duration="1700" data-sal-easing="ease-out-bounce" >Skills</h1>
-        <div class="skills-box">
-            <i class="fab fa-html5 skills-icon" data-sal="zoom-in" data-sal-duration="1700" data-sal-easing="ease-out-bounce"></i>
-            <div class="progress-bar" data-sal="zoom-in" data-sal-duration="1700" data-sal-easing="ease-out-bounce">
-                <div id="html-experience"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img class="about-image" src="images/doorwin.png" alt="Logo">
+                        </div>
+                        <div class="flip-card-back">
+                            <img class="about-image" src="images/thatsme.png">
+                            <figcaption>Hi. Thats me</figcaption>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-info col-xs-12 col-md-8">
+                <div>
+                    <h1 class="header">General</h1>
+                    <hr>
+                    <ul>
+                        <li style="text-align: left"><span style="color:orange">Name :</span> <span data-sal-duration="1800" data-sal="slide-left" data-sal-delay="300" data-sal-easing="ease-out-bounce">Dorwin Liang</span></li>
+                        <li style="text-align: left"><span style="color:orange">Age :</span> <span data-sal-duration="1800" data-sal="slide-right" data-sal-delay="300" data-sal-easing="ease-out-bounce">17</span></li>
+                        <li style="text-align: left"><span style="color:orange">School :</span> <span data-sal-duration="1800" data-sal="slide-left" data-sal-delay="300" data-sal-easing="ease-out-bounce">High School of
+                            Telecommunications</span></li>
+                        <li style="text-align: left"><span style="color:orange">Knowledgable in :</span> <span data-sal-duration="1800" data-sal="slide-right" data-sal-delay="300" data-sal-easing="ease-out-bounce">HTML, CSS</span> </li>
+                        <li style="text-align: left"><span style="color:orange">Learning :</span> <span data-sal-duration="1800" data-sal="slide-left" data-sal-delay="300" data-sal-easing="ease-out-bounce">jQuery, Bootstrap</span></li>
+                        <li style="text-align: left"><span style="color:orange">Self learning :</span> <span data-sal-duration="1800" data-sal="slide-right" data-sal-delay="300" data-sal-easing="ease-out-bounce">Javascript,
+                            Python </span></li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div>
+                    <h1 class="header">Interest</h1>
+                    <hr>
+                    <ul>
+                        <li>Game Development 🎮</li>
+                        <li>App Development 📱</li>
+                        <li>Web Development 🌐</li>
+                        <li>Software Engineering 💭</li>
+                        <li>Virtual/Augmented Reality 👻</li>
+                        <li>Artificial Intelligence 🤖</li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="skills-box">
-            <i class="fab fa-css3-alt skills-icon" data-sal="zoom-in" data-sal-duration="1700" data-sal-easing="ease-out-bounce" data-sal-delay="250"></i>
-            <div class="progress-bar" data-sal="zoom-in" data-sal-duration="1700" data-sal-easing="ease-out-bounce" data-sal-delay="250">
-                <div id="css-experience"></div>
-            </div>
-        </div>
-        <div class="skills-box">
-            <i class="fab fa-js-square skills-icon" data-sal="zoom-in" data-sal-duration="1700" data-sal-easing="ease-out-bounce" data-sal-delay="500"></i>
-            <div class="progress-bar" data-sal="zoom-in" data-sal-duration="1700" data-sal-easing="ease-out-bounce" data-sal-delay="500">
-                <div id="js-experience"></div>
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
     </div>
-    <footer>
-        <h1 class="footer-h1">Thanks for checking out my website!</h1>
-        <h1 class="footer-h1">Find me at</h1>
-        <div class="footer-social-media">
-            <abbr title="https://mail.google.com/mail/u/0/#inbox">
-                <a href="https://mail.google.com/mail/u/0/#inbox" class="footer-links">
-                    <i class="far fa-envelope footer-icon footer-email"></i>dorwinliang@gmail.com
-                </a>
-            </abbr>
-            <abbr title="https://github.com/dorwinl3894">
-                <a class="footer-links" href="https://github.com/dorwinl3894">
-                    <i class="fab fa-github footer-icon"></i>&nbspGithub
-                </a>
-            </abbr>
-            <abbr title="https://www.linkedin.com/in/dorwin-liang-b43422180/">
-                <a class="footer-links" href="https://www.linkedin.com/in/dorwin-liang-b43422180/">
-                    <i class="fab fa-linkedin footer-icon"></i>LinkedIn
-                </a>
-            </abbr>
+
+    <div class="title-decoration" id="project-page">
+        <div class="horizontal-line-decoration"></div>
+        <h1 class="title" data-sal-duration="1500" data-sal="slide-left" data-sal-delay="200" data-sal-easing="ease-out-bounce">Projects</h1>
+        <div class="horizontal-line-decoration"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="card col-xs-12 col-md-4">
+                <img class="card-img-top" src="images/shiba_inu.png" alt="Shiba Inu Project">
+                <div class="card-body">
+                    <h5 class="card-title" style="color:orange">All About Shiba Inu</h5>
+                    <p class="card-text">Nov 2018</p>
+                    <p class="card-text">Simple informative website I made to learn web development.</p>
+                    <div class="tags">
+                        <p class="card-tag text-center"><b>HTML</b></p>
+                        <p class="card-tag text-center"><b>CSS</b></p>
+                    </div>
+                    <a href="https://github.com/dorwinl3894/Shiba_Inu" class="btn btn-primary">Repo</a>
+                    <a href="https://dorwinl3894.github.io/Shiba_Inu/" class="btn btn-primary">Website</a>
+                </div>
+            </div>
+
+            <div class="card col-xs-12 col-md-4">
+                <img class="card-img-top" src="images/calculatorProject.png" alt="Calculator Project">
+                <div class="card-body">
+                    <h5 class="card-title" style="color:orange">Basic Calculator</h5>
+                    <p class="card-text">Jan 2019</p>
+                    <p class="card-text">Basic Calculator made with JavaScript that can add, subtract, multiple, and
+                        divide whole numbers.</p>
+                    <div class="tags">
+                        <p class="card-tag text-center"><b>HTML</b></p>
+                        <p class="card-tag text-center"><b>CSS</b></p>
+                        <p class="card-tag text-center"><b>Javascript</b></p>
+                    </div>
+                    <a href="https://github.com/dorwinl3894/CalculatorJS" class="btn btn-primary">Repo</a>
+                    <a href="https://dorwinl3894.github.io/CalculatorJS/" class="btn btn-primary">Website</a>
+                </div>
+            </div>
+
+            <div class="card col-xs-12 col-md-4">
+                <img class="card-img-top" src="images/poster-generator.png" alt="Poster Project">
+                <div class="card-body">
+                    <h5 class="card-title" style="color:orange">Poster Generator</h5>
+                    <p class="card-text">Feb 2019</p>
+                    <p class="card-text">School project to practice jQuery and its functionality.</p>
+                    <div class="tags">
+                        <p class="card-tag text-center"><b>HTML</b></p>
+                        <p class="card-tag text-center"><b>CSS</b></p>
+                        <p class="card-tag text-center"><b>jQuery</b></p>
+                    </div>
+                    <a href="https://github.com/dorwinl3894/poster-generator" class="btn btn-primary">Repo</a>
+                    <a href="https://dorwinl3894.github.io/poster-generator/" class="btn btn-primary">Website</a>
+                </div>
+            </div>
+
+            <div class="card col-xs-12 col-md-4">
+                <img class="card-img-top" src="images/cell-cycleProject.jpg" alt="Cell Cycle Project">
+                <div class="card-body">
+                    <h5 class="card-title" style="color:orange">All About the Cell Cycle</h5>
+                    <p class="card-text">Feb 2019</p>
+                    <p class="card-text">Project for my AP Biology class which explains the Cell Cycle.</p>
+                    <div class="tags">
+                        <p class="card-tag text-center"><b>HTML</b></p>
+                        <p class="card-tag text-center"><b>CSS</b></p>
+                        <p class="card-tag text-center"><b>jQuery</b></p>
+                    </div>
+                    <a href="https://github.com/dorwinl3894/cell-cycle" class="btn btn-primary">Repo</a>
+                    <a href="https://dorwinl3894.github.io/cell-cycle/" class="btn btn-primary">Website</a>
+                </div>
+            </div>
+
+            <div class="card col-xs-12 col-md-4">
+                <img class="card-img-top" src="images/personal-website.png" alt="Personal Website Project">
+                <div class="card-body">
+                    <h5 class="card-title" style="color:orange">Personal Website / Portfolio</h5>
+                    <p class="card-text">April 2019</p>
+                    <p class="card-text">Website with info about me and the projects I have done.</p>
+                    <div class="tags">
+                        <p class="card-tag text-center"><b>HTML</b></p>
+                        <p class="card-tag text-center"><b>CSS</b></p>
+                        <p class="card-tag text-center"><b>Bootstrap</b></p>
+                        <p class="card-tag text-center"><b>Sal.js</b></p>
+                    </div>
+                    <a href="https://github.com/dorwinl3894/dorwinl3894.github.io" class="btn btn-primary">Repo</a>
+                    <a href="http://dorwinl3894.github.io" class="btn btn-primary">Website</a>
+                </div>
+            </div>
         </div>
-    </footer>
+    </div>
+
+    <div class="title-decoration" id="contact-page">
+        <div class="horizontal-line-decoration"></div>
+        <h1 class="title" data-sal-duration="1500" data-sal="slide-left" data-sal-delay="200" data-sal-easing="ease-out-bounce">Contact</h1>
+        <div class="horizontal-line-decoration"></div>
+    </div>
+    <div class="container contact-section">
+        <i class="fab fa-github"><a href="https://github.com/dorwinl3894"><span class="contact-info">Github</span></a></i>
+        <br>
+        <i class="far fa-envelope"><a href="https://gmail.com"><span class="contact-info">dorwinl3894@hstat.org</span></a></i>
+        <br>
+        <i class="fab fa-linkedin"><a href="https://www.linkedin.com/in/dorwin-liang-b43422180/"><span class="contact-info">LinkedIn</span></a></i>
+    </div>
 
 
-<script src="sal/sal.js"></script>
+<script src="node_modules/sal.js/dist/sal.js"></script>
 <script>
     sal();
 </script>
-  
 </body>
+
 </html>

@@ -1,23 +1,35 @@
-* {
-    margin: 0;
-    padding: 0;
+
+html {
+    scroll-behavior: smooth;
+  }
+nav {
+    font-family: 'Quicksand', sans-serif;
+}
+a:hover {
+    color: orange !important;
+}
+figcaption {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 30px;
+}
+li {
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+}
+/* nav bar */
+.nav-item {
+    font-size: 20px;
 }
 
-body {
-
-}
-a {
-    text-decoration: none;
+#brand {
+    color: orange;
+    font-size: 30px;
     
 }
 
-li {
-    margin: 10px 0px;
-
-/* CSS for landing page section */
-.landing-page {
+/* landing page */
+#landing-page {
     height: 100vh;
-    background: url(images/brooklyn-bridge.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,235 +38,167 @@ li {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 4.5vw;
-    color: white;
-    font-family: 'Nunito Sans', sans-serif;
-}
-.name {
-    font-family: 'Indie Flower', cursive;
-}
-
-/* CSS for about section */
-.about-section {
-    background-color: rgb(245, 245, 245);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.logo {
-    margin-top: 50px;
-   border: 4px solid black;
-   border-radius: 200px;
+    font-family: 'Quicksand', sans-serif;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(238,145,14,1) 100%);
     
 }
-.information {
-    font-family: 'Questrial', sans-serif;
-    font-size: 30px;
-    width: 66%;
-    margin: 30px;
-}
-.interest-box {
-    font-family: 'Questrial', sans-serif;
-    font-size: 25px;
-    margin: 30px 0px;
-}
-#interest-list {
-    list-style-type: none;
-    text-align: center;
-}
-.impt-text {
-    color: rgb(193, 178, 131);
-}
-
-/* CSS for projects section */
-.projects-section {
-    display: flex;
-    background-color: rgb(56, 56, 56);
-    justify-content: center;
-    flex-direction: column;
-}
-.header {
+.landing-page-title {
     font-size: 80px;
-    margin-top: 20px;
-    text-align: center;
-    font-family: 'Nunito Sans', sans-serif;
-    color: rgb(193, 178, 131);
+}
+.name {
+    color: orange;
+    border: 3px solid black;
+    padding: 15px;
+}
+.logo {
+    border: 3px solid black;
+    border-radius: 200px;
+    
 }
 
-.projects-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+/* Titles  */
+.title {
+    margin: 10px 10px;
+    color: orange;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
 }
-.project-item {
-    border-radius: 20px;
-    width: 600px;
-    height: 600px;
-    margin: 30px 5px;
-}
-
-/* CSS for skills section */
-.skills-section {
-    background-color: rgb(245, 245, 245);
-    display: flex;
-    flex-direction: column;
-}
-.skills-box {
+.title-decoration {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 25px 0px;
+    margin: 80px 0px;
 }
-.progress-bar {
-    width: 400px;
-    height: 50px;
-    background-color: white;
-    border-radius: 200px;
-    border: 4px solid black;
-}
-.fa-html5 {
-    font-size: 10vw;
-    color: rgb(233, 98, 40);
+.horizontal-line-decoration {
+    width: 200px;
+    height: 2px;
+    background-color: black;
 }
 
-.fa-css3-alt {
-    font-size: 10vw;
-    color: rgb(28, 136, 199);
-}
-.fa-js-square {
-    font-size: 10vw;
-    color: rgb(239, 216, 29);
-}
-#html-experience {
-    width: 80%;
-    height: 50px;
-    background-color:rgb(255, 81, 7) ;
-    border-radius: 200px;
-}
-#css-experience {
-    width: 70%;
-    height: 50px;
-    background-color:rgb(0, 161, 255) ;
-    border-radius: 200px;
-}
-#js-experience {
-    width: 35%;
-    height: 50px;
-    background-color:rgb(234, 207, 0) ;
-    border-radius: 200px;
-}
-.skills-extra-box {
-    display: flex;
-}
-.skills-extra-icon {
-    width: 250px;
-    height: 200px;
-    font-size: 200px;
-}
-
-/* CSS for footer */
-footer {
-    font-family: 'Nunito Sans', sans-serif;
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    width: 300px;
+    height: 350px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    /* position: relative; */
     width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    outline: 5px solid black;
+    border: 5px solid orange;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    outline: 5px solid orange;
+    border: 5px solid black;
+    transform: rotateY(180deg);
+  }
+
+.about-image {
+    width: 200px;
     height: 200px;
-    background-color: rgb(56, 56, 56);
-    color: white;
+    margin-top: 50px;
+}
+
+#about-pic {
+    border: 5px solid orange;
+    outline: 5px solid black;
+}
+
+.header {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Projects */
+.card {
+    margin-top: 20px;
+}
+.card-img-top {
+    border: 2px solid black;
+    margin-top: 10px;
+}
+.tags {
     display: flex;
-    justify-content: center;
+}
+.card-img-top {
+    height: 225px;
+}
+.card-tag {
+    border: 1px solid black;
+    background-color: orange;
+    color: black;
+    font-size: 15px;
+    margin-right: 10px;
+    padding: 3px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Contact */
+.fa-github, .fa-envelope, .fa-linkedin {
+    font-size: 40px;
+    color: orange;
+}
+.contact-info {
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    margin-left: 10px;
+}
+.contact-section {
+    display: flex;
     align-items: center;
     flex-direction: column;
 }
-.footer-links {
-    font-size: 35px;
-    color: white;
-    font-family: 'Nunito Sans', sans-serif;
-    text-decoration:none;
-}
-.footer-links:hover {
-    color: rgb(193, 178, 131);
-}
-.footer-icon {
-    color: rgb(193, 178, 131);
-    font-size: 35px;
-    margin: 10px 20px;
-}
 
-.footer-h1 {
-    color: rgb(193, 178, 131);
+@media (max-width:667px) {
+    * {
+        list-style: initial;
+    }
+    .landing-page-title {
+        font-size: 60px;
+    }
+    .name {
+        padding: 5px;
+        margin: 0px 20px;
+    }
+    .flip-card {
+        margin: 50px auto;
+    }
+    .fa-github, .fa-envelope, .fa-linkedin {
+        font-size: 22px;
+        color: orange;
+    }
 }
-
-/* CSS for phones */
-@media (max-width:600px) {
-    .landing-page {
-        font-size: 10vw;
-    }
-    .information {
-        width: 90%;
-        font-size: 26px;
-    }
-    .interest-box {
-        margin: 30px 30px;
-    }
-    #interest-title {
-        font-size: 23px;
-    }
-    #interest-list {
-        font-size: 23px;
-    }
-    .projects-box {
-        flex-direction: column;
-    }
-    .project-item {
-        margin: 5px 20px;
-        width: 90%;
-        height: 300px;
-    }
-    .skills-box {
-        flex-direction: column;
-    }
-    .skills-icon {
-        font-size: 20vw;
-    }
-    .progress-bar {
-        width: 90%;
-    }
-
-
-    /* CSS for footer */
-    .footer-icon {
-        font-size: 10vw;
+@media (max-width:996px) {
+    .about-info {
         text-align: center;
     }
-    .footer-social-media {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+    * {
+        list-style: none;
     }
-    footer {
-        height: 350px;
-    }
-    .footer-email {
-        font-size: 25px;
-    }
-    .footer-links {
-        font-size: 20px;
-    }
-    .footer-h1 {
-        font-size: 20px;
-        text-align: center;
-        margin-bottom: 10px;
-        text-align: center;
-    }
-
-}
-
-@media (max-width:800px) {
-    footer {
-        height: 380px;
-    }
-    .skills-icon {
-        font-size: 20vw;
-    }
-
 }
